@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        #result {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 80%;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Odd or Even Number Checker</h1>
+    </header>
+
+    <div class="container">
+        <h2>Check if a Number is Odd or Even</h2>
+        <input type="number" id="numberInput" placeholder="Enter a number" />
+        <button onclick="checkOddOrEven()">Check</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function checkOddOrEven() {
+            const num = document.getElementById("numberInput").value;
+            const result = document.getElementById("result");
+            
+            if (num === '') {
+                result.textContent = "Please enter a number!";
+                result.style.color = "red";
+                return;
+            }
+
+            if (num % 2 === 0) {
+                result.textContent = `${num} is an even number.`;
+                result.style.color = "green";
+            } else {
+                result.textContent = `${num} is an odd number.`;
+                result.style.color = "green";
+            }
+        }
+    </script>
+
+</body>
+</html>
