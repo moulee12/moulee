@@ -1,0 +1,14 @@
+NAME: MOULEESHWARAN.R
+DOB:01/01/2005
+GENDER: Male
+FATHER NAME: T.Ramanan
+NATIONALITY: Indian
+LANGUAGE KNOW: Tamil,English
+DEGREE: BCA
+QUALIFICATIONS: Higher Secondary
+HOBBIES:  Watching movies
+		Playing video games
+		Listing song
+ADDRESS:3/770 mount battren street ,ptc
+                Chennai6000-97
+
